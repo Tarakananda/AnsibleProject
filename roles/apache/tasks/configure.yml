@@ -1,0 +1,8 @@
+---
+- name: Use Custom Config File
+  copy: src=apache2.conf dest=/etc/apache2/
+  notify:
+         - Restart Apache Web Server
+
+- name: Use Custom Index File
+  copy: src=index.html dest=/var/www/html

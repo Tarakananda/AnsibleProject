@@ -1,0 +1,4 @@
+[controller]
+localhost		ansible_connection=local
+[webservers]
+44.202.68.200           ansible_connection=ssh ansible_user=ubuntu
